@@ -1,0 +1,7 @@
+<h1>I am the Brokerage application</h1>
+<div *ngIf="order && order.legNumber > 0">
+  <lib-leg [legNumber]="order.legNumber"
+           [orderNumber]="order.orderNumber">
+  </lib-leg>
+</div>
+<lib-date></lib-date>
